@@ -1,0 +1,65 @@
+:root {
+  font-family: "Space Grotesk", "Sora", "Inter", system-ui, sans-serif;
+  background-color: #05070d;
+  color: #e8f2ff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #05070d;
+}
+
+.intro-rise {
+  animation: intro-rise 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Soft entrance for carousel cards */
+.project-fade {
+  animation: project-fade 0.35s ease;
+}
+
+/* Modal pop */
+.modal-rise {
+  animation: modal-rise 0.28s ease-out;
+}
+
+@keyframes intro-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.99);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes project-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
