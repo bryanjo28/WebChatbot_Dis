@@ -13,7 +13,7 @@ const projects = [
     tech: ["Generative AI", "Python"],
     impact: "Draft assistants for GAIA users.",
     heroImage: "/assets/gaia.png",
-    projectUrl: "https://www.gaia.intra.bca.co.id",
+    projectUrl: "https://gaia.intra.bca.co.id",
     metrics: [
       { label: "Users", value: "Internal BCA", icon: "👥" },
       { label: "Deployments", value: "Intranet", icon: "🛰️" },
