@@ -8,11 +8,12 @@ const projects = [
     category: "Internal",
     tagline: "Assistive AI for BCA.",
     desc: "Initial build for GAIA assistants running on intranet.",
-    detail: "Runs in intranet with low resource needs; TDZ install not required; internet access allowed.",
+    detail: "Runs in intranet with low resource needs;",
     highlights: ["Intranet scope", "Low resource"],
     tech: ["Generative AI", "Python"],
     impact: "Draft assistants for GAIA users.",
-    heroImage: "/public/assets/gaia.png",
+    heroImage: "/assets/gaia.png",
+    projectUrl: "www.gaia.intra.bca.co.id",
     metrics: [
       { label: "Users", value: "Internal BCA", icon: "👥" },
       { label: "Deployments", value: "Intranet", icon: "🛰️" },
@@ -23,12 +24,12 @@ const projects = [
         {
           title: "Use cases",
           desc: "Gen AI - Layla Learning Recommendation.",
-          image: "/public/assets/learning_layla.png",
+          image: "/assets/learning_layla.png",
         },
         {
           title: "Use cases",
           desc: "Gen AI - Layla Content Creation",
-          image: "/public/assets/content_layla.png",
+          image: "/assets/content_layla.png",
         },
         {
           title: "Lightweight",
@@ -50,6 +51,7 @@ const projects = [
     tech: ["Metahuman", "3D", "AI"],
     impact: "Showcase metahuman concierge for BCA.co.id.",
     heroImage: "https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&w=1200&q=80",
+    projectUrl: "/projects/metahuman",
     metrics: [
       { label: "Stage", value: "Prototype", icon: "🧪" },
       { label: "Resource", value: "High", icon: "⚡" },
@@ -87,6 +89,7 @@ const projects = [
     tech: ["Speech", "LLM", "React"],
     impact: "Upgrade CSO training throughput.",
     heroImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    projectUrl: "/projects/cso-roleplay",
     metrics: [
       { label: "Scenarios", value: "Drafting", icon: "📜" },
       { label: "Devices", value: "External PCs", icon: "🖥️" },
@@ -124,6 +127,7 @@ const projects = [
     tech: ["OCR", "LLM", "API"],
     impact: "Speed up invoice intake.",
     heroImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    projectUrl: "/projects/invoice-read",
     metrics: [
       { label: "Docs/day", value: "TBD", icon: "📄" },
       { label: "Accuracy", value: "Tuning", icon: "🎯" },
@@ -161,6 +165,7 @@ const projects = [
     tech: ["Mattermost", "Docker"],
     impact: "Enable secure team comms.",
     heroImage: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+    projectUrl: "/projects/mattermost",
     metrics: [
       { label: "Teams", value: "TBD", icon: "👥" },
       { label: "Uptime", value: "Tracked", icon: "⏱️" },
@@ -198,6 +203,7 @@ const projects = [
     tech: ["Rocket.Chat", "Docker"],
     impact: "Provide chat redundancy option.",
     heroImage: "https://images.unsplash.com/photo-1556767576-cfba0b6ae8f0?auto=format&fit=crop&w=1200&q=80",
+    projectUrl: "/projects/rocket-chat",
     metrics: [
       { label: "Instances", value: "TBD", icon: "🗂️" },
       { label: "Resource", value: "Low-med", icon: "⚙️" },
@@ -229,12 +235,13 @@ const projects = [
     status: "In Progress",
     category: "Experience",
     tagline: "BLI game experience.",
-    desc: "Internet/local at external PC, TDZ software, no internet allowed, low resources, sign-in.",
+    desc: "Gamification for learning internal BCA",
     detail: "External-PC game that runs offline; TDZ ready with sign-in.",
     highlights: ["Offline", "External PC", "Sign-in"],
     tech: ["Game", "Client"],
     impact: "Engagement for BLI users.",
-    heroImage: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/assets/gamebli.png",
+    projectUrl: "www.gallerygame.site",
     metrics: [
       { label: "Players", value: "TBD", icon: "🎮" },
       { label: "Mode", value: "Offline", icon: "🔌" },
@@ -245,11 +252,11 @@ const projects = [
         {
           title: "Gameplay",
           desc: "Core loop outline.",
-          image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+          image: "/assets/gamebli.png",
         },
         {
           title: "Access",
-          desc: "Offline friendly with sign-in.",
+          desc: "Through .",
           image: "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=800&q=80",
         },
         {
@@ -692,11 +699,11 @@ export default function App() {
       {modalProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 py-6 backdrop-blur" onClick={closeModal}>
           <div
-            className="modal-rise relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-slate-950/95 shadow-[0_25px_120px_rgba(0,0,0,0.7)] backdrop-blur-2xl"
+            className="modal-rise relative w-full max-w-2xl overflow-hidden rounded-3xl border border-white/10 bg-slate-950/95 shadow-[0_18px_90px_rgba(0,0,0,0.65)] backdrop-blur-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="absolute inset-0 opacity-50 [background:radial-gradient(circle_at_20%_20%,rgba(51,168,255,0.18),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(124,241,255,0.12),transparent_35%)]" />
-            <div className="relative space-y-5 p-6 sm:p-7">
+            <div className="relative space-y-5 p-5 sm:p-6">
               <div className="flex items-start justify-between gap-3">
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-sky-200">
@@ -792,9 +799,14 @@ export default function App() {
                 >
                   Close
                 </button>
-                <button className="rounded-xl bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/30 transition hover:-translate-y-0.5 hover:shadow-cyan-400/40">
+                <a
+                  href={modalProject.projectUrl || "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-xl bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/30 transition hover:-translate-y-0.5 hover:shadow-cyan-400/40"
+                >
                   Open Full Project Page
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -870,9 +882,14 @@ export default function App() {
                 >
                   Close
                 </button>
-                <button className="rounded-xl bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/30 transition hover:-translate-y-0.5 hover:shadow-cyan-400/40">
+                <a
+                  href={caseStudyProject.projectUrl || "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-xl bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/30 transition hover:-translate-y-0.5 hover:shadow-cyan-400/40"
+                >
                   Open Full Project Page
-                </button>
+                </a>
               </div>
             </div>
           </div>
