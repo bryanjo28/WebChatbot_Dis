@@ -13,7 +13,7 @@ const projects = [
     tech: ["Generative AI", "Python"],
     impact: "Draft assistants for GAIA users.",
     heroImage: "/assets/gaia.png",
-    projectUrl: "www.gaia.intra.bca.co.id",
+    projectUrl: "https://www.gaia.intra.bca.co.id",
     metrics: [
       { label: "Users", value: "Internal BCA", icon: "👥" },
       { label: "Deployments", value: "Intranet", icon: "🛰️" },
@@ -241,7 +241,7 @@ const projects = [
     tech: ["Game", "Client"],
     impact: "Engagement for BLI users.",
     heroImage: "/assets/gamebli.png",
-    projectUrl: "www.gallerygame.site",
+    projectUrl: "https://www.gallerygame.site",
     metrics: [
       { label: "Players", value: "TBD", icon: "🎮" },
       { label: "Mode", value: "Offline", icon: "🔌" },
