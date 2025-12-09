@@ -303,11 +303,31 @@ export default function App() {
   const [modalProject, setModalProject] = useState(null);
   const [caseStudyProject, setCaseStudyProject] = useState(null);
   const [showStatusCard, setShowStatusCard] = useState(true);
+  const [introProgress, setIntroProgress] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => setShowIntro(false), 1800);
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (!showIntro) return;
+    const total = 1600;
+    const tick = 25;
+    const step = (100 * tick) / total;
+    const interval = setInterval(() => {
+      setIntroProgress((p) => {
+        const next = p + step;
+        if (next >= 100) {
+          clearInterval(interval);
+          setTimeout(() => setShowIntro(false), 120);
+          return 100;
+        }
+        return next;
+      });
+    }, tick);
+    return () => clearInterval(interval);
+  }, [showIntro]);
 
   const activeProject = useMemo(() => projects[activeIndex], [activeIndex]);
 
@@ -347,6 +367,18 @@ export default function App() {
           </div>
           <h1 className="relative text-5xl font-semibold text-white sm:text-6xl intro-rise">DIS</h1>
           <p className="relative max-w-xl text-lg text-slate-300 intro-rise delay-150">Digital Innovation Solution</p>
+          <div className="intro-rise delay-200 relative w-64">
+            <div className="flex items-center justify-between text-xs font-semibold text-slate-300">
+              <span>Loading</span>
+              <span className="text-sky-200">{Math.round(introProgress)}%</span>
+            </div>
+            <div className="mt-2 h-2 overflow-hidden rounded-full border border-white/10 bg-white/5">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 transition-[width] duration-75 ease-linear"
+                style={{ width: `${introProgress}%` }}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
