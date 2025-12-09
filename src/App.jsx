@@ -4,24 +4,37 @@ const projects = [
   {
     title: "Gen AI - GAIA",
     tag: "GenAI",
-    status: "Ideation",
+    status: "Production",
     category: "Internal",
-    tagline: "Assistive AI for GAIA.",
+    tagline: "Assistive AI for BCA.",
     desc: "Initial build for GAIA assistants running on intranet.",
     detail: "Runs in intranet with low resource needs; TDZ install not required; internet access allowed.",
-    highlights: ["Intranet scope", "Low resource", "No TDZ install"],
-    tech: ["Pending", "AI"],
+    highlights: ["Intranet scope", "Low resource"],
+    tech: ["Generative AI", "Python"],
     impact: "Draft assistants for GAIA users.",
+    heroImage: "/public/assets/gaia.png",
     metrics: [
-      { label: "Users", value: "TBD", icon: "👥" },
+      { label: "Users", value: "Internal BCA", icon: "👥" },
       { label: "Deployments", value: "Intranet", icon: "🛰️" },
     ],
     caseStudy: {
       hero: "Intranet-first GAIA assistant concepts.",
       slides: [
-        { title: "Use cases", desc: "Internal workflows targeted first." },
-        { title: "Access", desc: "No TDZ install; intranet access only." },
-        { title: "Lightweight", desc: "Low resource footprint for early runs." },
+        {
+          title: "Use cases",
+          desc: "Gen AI - Layla Learning Recommendation.",
+          image: "/public/assets/learning_layla.png",
+        },
+        {
+          title: "Use cases",
+          desc: "Gen AI - Layla Content Creation",
+          image: "/public/assets/content_layla.png",
+        },
+        {
+          title: "Lightweight",
+          desc: "Low resource footprint for early runs.",
+          image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80",
+        },
       ],
     },
   },
@@ -36,6 +49,7 @@ const projects = [
     highlights: ["External PC", "High resource", "Internet"],
     tech: ["Metahuman", "3D", "AI"],
     impact: "Showcase metahuman concierge for BCA.co.id.",
+    heroImage: "https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&w=1200&q=80",
     metrics: [
       { label: "Stage", value: "Prototype", icon: "🧪" },
       { label: "Resource", value: "High", icon: "⚡" },
@@ -43,9 +57,21 @@ const projects = [
     caseStudy: {
       hero: "Metahuman concierge concepts.",
       slides: [
-        { title: "Visual fidelity", desc: "High-res avatars for web." },
-        { title: "Runtime", desc: "External PC with TDZ software." },
-        { title: "Bandwidth", desc: "Internet required for assets." },
+        {
+          title: "Visual fidelity",
+          desc: "High-res avatars for web.",
+          image: "https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Runtime",
+          desc: "External PC with TDZ software.",
+          image: "https://images.unsplash.com/photo-1556767576-cfba0b6ae8f0?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Bandwidth",
+          desc: "Internet required for assets.",
+          image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+        },
       ],
     },
   },
@@ -60,6 +86,7 @@ const projects = [
     highlights: ["Roleplay", "External PC", "Internet"],
     tech: ["Speech", "LLM", "React"],
     impact: "Upgrade CSO training throughput.",
+    heroImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
     metrics: [
       { label: "Scenarios", value: "Drafting", icon: "📜" },
       { label: "Devices", value: "External PCs", icon: "🖥️" },
@@ -67,9 +94,21 @@ const projects = [
     caseStudy: {
       hero: "Interactive CSO roleplay sessions.",
       slides: [
-        { title: "Dialogue", desc: "LLM-driven branching scripts." },
-        { title: "Evaluation", desc: "Capture responses for coaching." },
-        { title: "Access", desc: "External PC + TDZ ready." },
+        {
+          title: "Dialogue",
+          desc: "LLM-driven branching scripts.",
+          image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Evaluation",
+          desc: "Capture responses for coaching.",
+          image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Access",
+          desc: "External PC + TDZ ready.",
+          image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+        },
       ],
     },
   },
@@ -84,6 +123,7 @@ const projects = [
     highlights: ["Intranet", "Parsing", "Low resource"],
     tech: ["OCR", "LLM", "API"],
     impact: "Speed up invoice intake.",
+    heroImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
     metrics: [
       { label: "Docs/day", value: "TBD", icon: "📄" },
       { label: "Accuracy", value: "Tuning", icon: "🎯" },
@@ -91,9 +131,21 @@ const projects = [
     caseStudy: {
       hero: "Internal invoice automation flows.",
       slides: [
-        { title: "Upload", desc: "Secure intranet upload." },
-        { title: "Extraction", desc: "LLM + OCR parsing pipeline." },
-        { title: "Export", desc: "Structured outputs to ERP." },
+        {
+          title: "Upload",
+          desc: "Secure intranet upload.",
+          image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Extraction",
+          desc: "LLM + OCR parsing pipeline.",
+          image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Export",
+          desc: "Structured outputs to ERP.",
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        },
       ],
     },
   },
@@ -108,6 +160,7 @@ const projects = [
     highlights: ["Chat", "Sign-in", "Low-med resource"],
     tech: ["Mattermost", "Docker"],
     impact: "Enable secure team comms.",
+    heroImage: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
     metrics: [
       { label: "Teams", value: "TBD", icon: "👥" },
       { label: "Uptime", value: "Tracked", icon: "⏱️" },
@@ -115,9 +168,21 @@ const projects = [
     caseStudy: {
       hero: "Collaboration rollouts.",
       slides: [
-        { title: "Workspace", desc: "Channel setup and roles." },
-        { title: "Access", desc: "Sign-in with flexible network." },
-        { title: "Ops", desc: "TDZ ready deployment." },
+        {
+          title: "Workspace",
+          desc: "Channel setup and roles.",
+          image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Access",
+          desc: "Sign-in with flexible network.",
+          image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Ops",
+          desc: "TDZ ready deployment.",
+          image: "https://images.unsplash.com/photo-1556767576-cfba0b6ae8f0?auto=format&fit=crop&w=800&q=80",
+        },
       ],
     },
   },
@@ -132,6 +197,7 @@ const projects = [
     highlights: ["Chat", "Sign-in", "Low-med resource"],
     tech: ["Rocket.Chat", "Docker"],
     impact: "Provide chat redundancy option.",
+    heroImage: "https://images.unsplash.com/photo-1556767576-cfba0b6ae8f0?auto=format&fit=crop&w=1200&q=80",
     metrics: [
       { label: "Instances", value: "TBD", icon: "🗂️" },
       { label: "Resource", value: "Low-med", icon: "⚙️" },
@@ -139,9 +205,21 @@ const projects = [
     caseStudy: {
       hero: "Rocket.Chat deployments.",
       slides: [
-        { title: "Channels", desc: "Config patterns for teams." },
-        { title: "Connectivity", desc: "Works with flexible internet." },
-        { title: "Access", desc: "Sign-in enforced." },
+        {
+          title: "Channels",
+          desc: "Config patterns for teams.",
+          image: "https://images.unsplash.com/photo-1556767576-cfba0b6ae8f0?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Connectivity",
+          desc: "Works with flexible internet.",
+          image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Access",
+          desc: "Sign-in enforced.",
+          image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80",
+        },
       ],
     },
   },
@@ -156,6 +234,7 @@ const projects = [
     highlights: ["Offline", "External PC", "Sign-in"],
     tech: ["Game", "Client"],
     impact: "Engagement for BLI users.",
+    heroImage: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
     metrics: [
       { label: "Players", value: "TBD", icon: "🎮" },
       { label: "Mode", value: "Offline", icon: "🔌" },
@@ -163,36 +242,46 @@ const projects = [
     caseStudy: {
       hero: "Game experience concepts.",
       slides: [
-        { title: "Gameplay", desc: "Core loop outline." },
-        { title: "Access", desc: "Offline friendly with sign-in." },
-        { title: "Platform", desc: "External PC with TDZ install." },
+        {
+          title: "Gameplay",
+          desc: "Core loop outline.",
+          image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Access",
+          desc: "Offline friendly with sign-in.",
+          image: "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=800&q=80",
+        },
+        {
+          title: "Platform",
+          desc: "External PC with TDZ install.",
+          image: "https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&w=800&q=80",
+        },
       ],
     },
   },
 ];
 
 const futures = [
-  "Quantum-safe key exchange",
-  "Holographic collaboration spaces",
+  "Banking in Smart Glasses",
+  "Voice Guidance Using Computer Vision",
   "Autonomous site reliability",
   "Bio-signal authentication",
   "Neural interface prototypes",
 ];
 
 const pipeline = [
-  { label: "Now", slot: "Q4 2025", title: "AI Monitoring Panel", note: "Surface runaway cost & latency spikes" },
-  { label: "Next", slot: "Q1 2026", title: "Internal Delivery Tooling", note: "Release train + golden paths for DIS teams" },
-  { label: "Next", slot: "Q2 2026", title: "Edge Reliability Kit", note: "Bundles for low-connectivity deployments" },
-  { label: "Later", slot: "Exploration", title: "VR/AR Control Room", note: "Hands-free ops console with spatial UI" },
-  { label: "Later", slot: "Exploration", title: "IoT Safety Mesh", note: "Adaptive guardrails for industrial devices" },
+  { label: "Next", slot: "2026", title: "Reachy Mini", note: "Surface runaway cost & latency spikes" },
+  { label: "Next", slot: "2026", title: "Blockchain based Money transfer", note: "Release train + golden paths for DIS teams" },
+  { label: "Next", slot: "2026", title: "Palm Biometric for Payment", note: "Bundles for low-connectivity deployments" },
 ];
 
-const team = [
-  { name: "Alya Pratama", role: "Product Design", blurb: "Ngeracik UI/UX biar jelas & niat.", color: "from-sky-500 to-cyan-400" },
-  { name: "Raka Mahendra", role: "Frontend", blurb: "Ngulik microinteractions & perf web.", color: "from-indigo-500 to-blue-500" },
-  { name: "Nadya Wirawan", role: "Backend/DevOps", blurb: "Ngurus infra, deployment, SRE guardrails.", color: "from-emerald-500 to-teal-400" },
-  { name: "Bima Satriya", role: "AI/Automation", blurb: "Ngeracik model & pipeline observability.", color: "from-amber-400 to-orange-500" },
-];
+// const team = [
+//   { name: "Alya Pratama", role: "Product Design", blurb: "Ngeracik UI/UX biar jelas & niat.", color: "from-sky-500 to-cyan-400" },
+//   { name: "Raka Mahendra", role: "Frontend", blurb: "Ngulik microinteractions & perf web.", color: "from-indigo-500 to-blue-500" },
+//   { name: "Nadya Wirawan", role: "Backend/DevOps", blurb: "Ngurus infra, deployment, SRE guardrails.", color: "from-emerald-500 to-teal-400" },
+//   { name: "Bima Satriya", role: "AI/Automation", blurb: "Ngeracik model & pipeline observability.", color: "from-amber-400 to-orange-500" },
+// ];
 
 const liveMetrics = [
   { label: "Active Projects", value: "5" },
@@ -232,7 +321,7 @@ export default function App() {
   useEffect(() => {
     const autoplay = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % projects.length);
-    }, 5200);
+    }, 8000);
     return () => clearInterval(autoplay);
   }, []);
 
@@ -438,12 +527,12 @@ export default function App() {
                 <div className="grid gap-3 text-sm text-slate-300 lg:grid-cols-[1fr,320px]">
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
                     <p className="text-xs uppercase tracking-[0.3em] text-sky-200">Navigation</p>
-                    <div className="mt-3 flex flex-wrap items-center gap-2">
+                    <div className="mt-3 flex flex-wrap items-center justify-start gap-1.5 sm:gap-2">
                       {projects.map((p, idx) => (
                         <button
                           key={p.title}
                           onClick={() => setActiveIndex(idx)}
-                          className={`h-2.5 w-6 sm:w-8 rounded-full transition ${
+                          className={`h-2 w-5 sm:h-2.5 sm:w-7 rounded-full transition ${
                             idx === activeIndex ? "bg-sky-400 shadow-[0_0_12px_rgba(51,168,255,0.7)]" : "bg-white/15"
                           }`}
                         />
@@ -467,7 +556,7 @@ export default function App() {
                 <h2 id="future" className="mt-1 text-2xl font-semibold text-white sm:text-3xl">
                   Future Pipeline / Roadmap
                 </h2>
-                <p className="mt-1 text-sm text-slate-300 sm:text-base">Now → Next → Later, biar roadmapnya kebayang.</p>
+                {/* <p className="mt-1 text-sm text-slate-300 sm:text-base">Now → Next → Later, biar roadmapnya kebayang.</p> */}
               </div>
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/60 to-transparent opacity-60" />
             </div>
@@ -496,7 +585,7 @@ export default function App() {
               </div>
               <div className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-xl backdrop-blur-xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-200">Radar</p>
-                <p className="mt-1 text-sm text-slate-300">Signals kita pantau & siap dicoba.</p>
+                {/* <p className="mt-1 text-sm text-slate-300">Signals kita pantau & siap dicoba.</p> */}
                 <div className="mt-4 grid gap-2">
                   {futures.map((item, idx) => (
                     <div key={item} className="flex items-center gap-3 rounded-2xl border border-white/5 bg-slate-900/60 px-4 py-3">
@@ -574,7 +663,7 @@ export default function App() {
             )}
           </div>
 
-          <section className="mt-16 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-2xl sm:p-8">
+          {/* <section className="mt-16 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-2xl sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-200">Stay in touch</p>
@@ -590,10 +679,10 @@ export default function App() {
                 </button>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <footer className="mt-14 border-t border-white/5 pt-6 text-center text-sm text-slate-400">
-            <p>DIS - Building the future, responsibly.</p>
+            <p>DIS - Digital Innovation Solutions.</p>
             <div className="mt-1 text-xs uppercase tracking-[0.2em] text-slate-500">Tech-forward - Secure - Human-centric</div>
           </footer>
         </main>
@@ -637,11 +726,19 @@ export default function App() {
               </div>
 
               <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-slate-900/80 via-slate-800/60 to-sky-900/60 shadow-lg">
-                <div className="aspect-[16/9] bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.25),transparent_35%),radial-gradient(circle_at_70%_60%,rgba(14,165,233,0.25),transparent_40%),linear-gradient(120deg,rgba(15,23,42,0.9),rgba(3,7,18,0.95))]">
-                  <div className="absolute right-4 top-4 flex items-center gap-2 rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-100 backdrop-blur">
-                    <span className="h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_10px_rgba(52,211,153,0.8)]" />
-                    {modalProject.status}
-                  </div>
+                {modalProject.heroImage ? (
+                  <img
+                    src={modalProject.heroImage}
+                    alt={modalProject.title}
+                    className="h-[260px] w-full object-cover sm:h-[320px]"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="aspect-[16/9] bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.25),transparent_35%),radial-gradient(circle_at_70%_60%,rgba(14,165,233,0.25),transparent_40%),linear-gradient(120deg,rgba(15,23,42,0.9),rgba(3,7,18,0.95))]" />
+                )}
+                <div className="absolute right-4 top-4 flex items-center gap-2 rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-100 backdrop-blur">
+                  <span className="h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_10px_rgba(52,211,153,0.8)]" />
+                  {modalProject.status}
                 </div>
               </div>
 
@@ -728,10 +825,16 @@ export default function App() {
               </div>
 
               <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-slate-900/80 via-slate-800/60 to-sky-900/60 shadow-lg">
-                <div className="aspect-[16/9] overflow-hidden">
-                  <div className="h-full w-full bg-[radial-gradient(circle_at_25%_30%,rgba(56,189,248,0.2),transparent_40%),radial-gradient(circle_at_70%_60%,rgba(14,165,233,0.2),transparent_45%),linear-gradient(120deg,rgba(15,23,42,0.95),rgba(3,7,18,0.92))]" />
-                  <div className="absolute inset-4 rounded-2xl border border-white/5 bg-white/5/80 backdrop-blur"></div>
-                </div>
+                {caseStudyProject.heroImage ? (
+                  <img
+                    src={caseStudyProject.heroImage}
+                    alt={caseStudyProject.title}
+                    className="h-[240px] w-full object-cover sm:h-[280px]"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="aspect-[16/9] bg-[radial-gradient(circle_at_25%_30%,rgba(56,189,248,0.2),transparent_40%),radial-gradient(circle_at_70%_60%,rgba(14,165,233,0.2),transparent_45%),linear-gradient(120deg,rgba(15,23,42,0.95),rgba(3,7,18,0.92))]" />
+                )}
                 <div className="absolute right-4 top-4 flex items-center gap-2 rounded-full bg-sky-400/20 px-3 py-1 text-xs font-semibold text-sky-100 backdrop-blur">
                   <span className="h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_10px_rgba(56,189,248,0.8)]" />
                   Visual concept
@@ -744,7 +847,16 @@ export default function App() {
                     key={slide.title}
                     className="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70 p-4 shadow-lg backdrop-blur-xl"
                   >
-                    <div className="mb-3 h-28 w-full overflow-hidden rounded-xl bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.18),transparent_45%),linear-gradient(135deg,rgba(15,23,42,0.95),rgba(3,7,18,0.92))]" />
+                    {slide.image ? (
+                      <img
+                        src={slide.image}
+                        alt={slide.title}
+                        className="mb-3 h-28 w-full rounded-xl object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="mb-3 h-28 w-full overflow-hidden rounded-xl bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.18),transparent_45%),linear-gradient(135deg,rgba(15,23,42,0.95),rgba(3,7,18,0.92))]" />
+                    )}
                     <h4 className="text-base font-semibold text-white">{slide.title}</h4>
                     <p className="text-sm text-slate-300">{slide.desc}</p>
                   </div>
